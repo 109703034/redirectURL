@@ -58,6 +58,14 @@
             left: 50%;
             transform: translateX(-50%);
             z-index: -1;
+            max-width: 100%; /* 圖片最大寬度為螢幕寬度 */
+            height: auto; /* 保持圖片的原始高寬比例 */
+        }
+
+        @media screen and (max-width: 600px) {
+            .christmas-decoration {
+                width: 80%; /* 在小螢幕上將圖片寬度設置為螢幕寬度的80% */
+            }
         }
     </style>
 </head>
