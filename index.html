@@ -12,12 +12,14 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #008000; /* 綠色文字 */
             animation: fadeIn 1.5s ease-out;
+            position: relative; /* 父容器設置為相對定位 */
         }
 
         h1 {
-            font-size: 28px; /* 調整文字大小 */
+            font-size: 22px; /* 調整文字大小 */
             color: #ff0000; /* 紅色標題 */
             animation: bounce 1s infinite alternate, colorChange 3s infinite alternate; /* 添加特效動畫 */
+            position: relative; /* 子容器也設置為相對定位 */
         }
 
         p {
@@ -54,7 +56,7 @@
 
         .christmas-decoration {
             position: absolute;
-            top: 10%;
+            bottom: -300px; /* 在文字下方移動圖片 */
             left: 50%;
             transform: translateX(-50%);
             z-index: -1;
